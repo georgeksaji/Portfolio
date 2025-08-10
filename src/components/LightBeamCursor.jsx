@@ -16,7 +16,6 @@ export default function LightBeamCursor() {
       window.removeEventListener('mousemove', moveBeam);
     };
   }, []);
-
   return (
     <div
       ref={beamRef}
@@ -29,19 +28,39 @@ export default function LightBeamCursor() {
         pointerEvents: 'none',
         zIndex: 9999,
         transform: 'translate3d(-100px, -100px, 0)',
-        filter: 'blur(1px)',
+        filter: 'blur(0.5px)',
         transition: 'transform 0.08s cubic-bezier(.22,1,.36,1)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
       <div
         style={{
-          width: '100%',
-          height: '100%',
+          width: '40%',
+          height: '40%',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.24) 0%, rgba(9, 4, 22, 0.76) 60%, rgba(255,255,200,0) 100%)',
-          boxShadow: '0 0 16px 4px rgba(11, 11, 11, 0.5)',
+          background: 'conic-gradient(#f8f8f8 0deg, #bfc1c6c0 40deg, #e6e6e6be 90deg, #a7a9acb9 140deg, #f8f8f8a4 180deg, #bfc1c6c0 220deg, #e6e6e6 270deg, #a7a9acb9 320deg, #f8f8f8 360deg)',
+          boxShadow: '0 0 4px 4px rgba(0, 0, 0, 0.33), 0 0 16px 4px rgba(0, 0, 0, 0.31)',
+          filter: 'contrast(1.4) brightness(1.1) drop-shadow(0 0 8px #e0e0e0)',
+          position: 'relative',
         }}
-      />
+      >
+        <div
+          style={{
+            position: 'absolute',
+            left: '18%',
+            top: '18%',
+            width: '20%',
+            height: '20%',
+            borderRadius: '50%',
+            background: 'linear-gradient(120deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.05) 100%)',
+            filter: 'blur(1.2px)',
+            pointerEvents: 'none',
+          }}
+        />
+      </div>
     </div>
   );
+
 }

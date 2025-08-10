@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import $ from "jquery";
+// import $ from "jquery";
 import { Parallax } from "react-scroll-parallax";
 import ShinyText from "./ShinyText/ShinyText.jsx";
 import RotatingText from "./RotatingText/RotatingText.jsx";

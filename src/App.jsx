@@ -14,6 +14,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+import LightBeamCursor from "./components/LightBeamCursor";
 
 // Import external libraries
 import AOS from "aos";
@@ -44,6 +45,7 @@ export default function App() {
 
   return (
     <ParallaxProvider>
+      <LightBeamCursor />
       <Preloader />
       <Header />
       <main>
