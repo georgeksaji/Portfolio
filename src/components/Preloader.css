@@ -1,0 +1,18 @@
+.svg-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.svg-logo-path {
+  stroke-dasharray: 1200; /* Adjust to path length */
+  stroke-dashoffset: 1200;
+  animation: draw-logo 2s linear forwards;
+}
+
+@keyframes draw-logo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

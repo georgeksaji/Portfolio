@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 // CSS imports
 import "./assets/css/base.css";
@@ -42,7 +43,7 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <ParallaxProvider>
       <Preloader />
       <Header />
       <main>
@@ -52,6 +53,6 @@ export default function App() {
         <Portfolio />
       </main>
       <Footer />
-    </>
+    </ParallaxProvider>
   );
 }

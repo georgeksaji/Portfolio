@@ -11,6 +11,7 @@ import {
 import { motion, AnimatePresence } from "motion/react";
 
 import "./RotatingText.css";
+import ShinyText from "../ShinyText/ShinyText";
 
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -203,7 +204,7 @@ const RotatingText = forwardRef((props, ref) => {
                     }}
                     className={cn("text-rotate-element", elementLevelClassName)}
                   >
-                    {char}
+                    <ShinyText text={char} />
                   </motion.span>
                 ))}
                 {wordObj.needsSpace && (

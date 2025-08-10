@@ -1,0 +1,24 @@
+.header-resume-btn {
+  margin-left: auto;
+  margin-right: 0;
+  align-self: center;
+  font-size: 0.95rem;
+  padding: 0.4em 1em;
+  text-transform: none !important;
+  letter-spacing: normal;
+  min-width: unset;
+  min-height: unset;
+}
+
+/* Remove all-caps from the anchor inside the button */
+.header-resume-btn a {
+  text-transform: none !important;
+  letter-spacing: normal;
+}
+
+@media (max-width: 900px) {
+  .header-resume-btn {
+    margin: 1rem 0 0 0;
+    align-self: flex-end;
+  }
+}

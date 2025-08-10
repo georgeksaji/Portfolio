@@ -1,22 +1,35 @@
+
 import React, { useEffect } from "react";
+import './Preloader.css';
 
 export default function Preloader() {
   useEffect(() => {
-    // Simulate preloader hide after window load
-    const handleLoad = () => {
+    // Ensure preloader is visible for at least 2 seconds
+    let minDurationPassed = false;
+    let windowLoaded = false;
+
+    const hidePreloader = () => {
       document.documentElement.classList.remove("ss-preload");
       document.documentElement.classList.add("ss-loaded");
-
-      // Hide preloader div after animation
       const loader = document.getElementById("loader");
       const preloader = document.getElementById("preloader");
+      if (loader) loader.style.display = "none";
+      if (preloader) preloader.style.display = "none";
+    };
 
-      if (loader) {
-        loader.style.display = "none";
-      }
-      if (preloader) {
-        preloader.style.display = "none";
-      }
+    const tryHide = () => {
+      if (minDurationPassed && windowLoaded) hidePreloader();
+    };
+
+    // Minimum duration (2s)
+    setTimeout(() => {
+      minDurationPassed = true;
+      tryHide();
+    }, 2000);
+
+    const handleLoad = () => {
+      windowLoaded = true;
+      tryHide();
     };
 
     window.addEventListener("load", handleLoad);
@@ -29,10 +42,27 @@ export default function Preloader() {
 
   return (
     <div id="preloader">
-      <div id="loader" className="dots-fade">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div id="loader" className="svg-loader">
+        <svg
+          width="300"
+          height="325"
+          viewBox="0 0 152 165"
+          fill="none"
+          
+          style={{ maxWidth: '80vw', maxHeight: '80vh', display: 'block' }}
+        >
+          <path
+            className="svg-logo-path"
+            d="M76,0.682L1,41.591v82.711l75,40.016l75-40.016V42.034L76,0.682z M69.182,145.227l-45.436-24.239
+            l28.643-19.098c7.364-4.902-0.45-16.084-8.475-10.739l-29.277,19.514v-53.87l54.545,29.748V145.227z M22.361,45.477l46.82-25.541
+            v30.177c0,9.02,13.636,9.027,13.636,0V20.011l47.114,25.984l-53.897,28.76L22.361,45.477z M82.818,86.591l54.545-29.107v53.182
+            l-29.066-19.377c-8.052-5.352-15.839,5.83-8.489,10.732l28.445,18.961l-45.436,24.245L82.818,86.591L82.818,86.591z"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="3"
+            strokeLinejoin="round"
+          />
+        </svg>
       </div>
     </div>
   );
