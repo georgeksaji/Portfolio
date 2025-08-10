@@ -1660,6 +1660,7 @@ input::-moz-focus-inner {
   position: absolute;
   top: 4rem;
   left: 0;
+  padding-right: 6vh;
 }
 
 .s-header.offset {
@@ -1756,8 +1757,12 @@ input::-moz-focus-inner {
   margin: 0;
 }
 
-.header-nav a {
+.header-nav a{
   color: rgba(255, 255, 255, 0.4);
+}
+
+.resume-btn {
+color: rgba(255, 255, 255, 0.4);
 }
 
 .header-nav a:hover,
