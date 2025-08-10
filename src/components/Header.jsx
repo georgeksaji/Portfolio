@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import StarBorder from "./StarBorder/StarBorder.jsx";
+import ConnectButton from "./ResumeButton/ResumeButton.jsx";
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,11 +94,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <StarBorder as="button" speed="5s">
-          <a href="#0" className="text-white text-2xl">
-            Resume
-          </a>
-        </StarBorder>
+        <ConnectButton>Resume</ConnectButton>
       </div>
 
       {/* Mobile Menu Toggle */}
