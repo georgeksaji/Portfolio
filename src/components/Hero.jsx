@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import $ from "jquery";
 import { Parallax } from "react-scroll-parallax";
 import ShinyText from "./ShinyText/ShinyText.jsx";
@@ -6,53 +6,18 @@ import RotatingText from "./RotatingText/RotatingText.jsx";
 import Ribbons from './Ribbons/Ribbons.jsx';
 import './HeroBg.css'; 
 
-
 export default function Hero() {
-  const bgRef = useRef(null);
-
-  // Remove old jQuery parallax
-  // Add mousemove parallax effect
   useEffect(() => {
-    const hero = document.getElementById('hero');
-    const bg = bgRef.current;
-    if (!hero || !bg) return;
-
-    let animFrame;
-    let targetX = 0, targetY = 0;
-    let currentX = 0, currentY = 0;
-
-    const onMouseMove = (e) => {
-      const rect = hero.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5; // -0.5 to 0.5
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      // Max translate in px
-      targetX = x * 30; // adjust 30 for strength
-      targetY = y * 20;
-    };
-
-    const animate = () => {
-      // Smoothly interpolate
-      currentX += (targetX - currentX) * 0.08;
-      currentY += (targetY - currentY) * 0.08;
-      bg.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
-      animFrame = requestAnimationFrame(animate);
-    };
-
-    hero.addEventListener('mousemove', onMouseMove);
-    animate();
-
-    return () => {
-      hero.removeEventListener('mousemove', onMouseMove);
-      cancelAnimationFrame(animFrame);
-      bg.style.transform = '';
-    };
+    if (typeof $("#hero").parallax === "function") {
+      $("#hero").parallax({ imageSrc: "/images/hero.png" });
+    }
   }, []);
 
   return (
     <div style={{ position: 'relative', minHeight: '80vh', overflow: 'hidden', width: '100%' }}>
       {/* Parallax background image */}
       <Parallax translateY={[-60,60]} scale={[0.8, 1.2]} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 0 }}>
-        <div className="hero-bg-image" ref={bgRef} />
+        <div className="hero-bg-image" />
       </Parallax>
 // Import the CSS for hero background image
 import './HeroBg.css';

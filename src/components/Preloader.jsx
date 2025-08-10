@@ -4,32 +4,21 @@ import './Preloader.css';
 
 export default function Preloader() {
   useEffect(() => {
-    // Ensure preloader is visible for at least 2 seconds
-    let minDurationPassed = false;
-    let windowLoaded = false;
-
-    const hidePreloader = () => {
+    // Simulate preloader hide after window load
+    const handleLoad = () => {
       document.documentElement.classList.remove("ss-preload");
       document.documentElement.classList.add("ss-loaded");
+
+      // Hide preloader div after animation
       const loader = document.getElementById("loader");
       const preloader = document.getElementById("preloader");
-      if (loader) loader.style.display = "none";
-      if (preloader) preloader.style.display = "none";
-    };
 
-    const tryHide = () => {
-      if (minDurationPassed && windowLoaded) hidePreloader();
-    };
-
-    // Minimum duration (2s)
-    setTimeout(() => {
-      minDurationPassed = true;
-      tryHide();
-    }, 2000);
-
-    const handleLoad = () => {
-      windowLoaded = true;
-      tryHide();
+      if (loader) {
+        loader.style.display = "none";
+      }
+      if (preloader) {
+        preloader.style.display = "none";
+      }
     };
 
     window.addEventListener("load", handleLoad);
@@ -44,12 +33,11 @@ export default function Preloader() {
     <div id="preloader">
       <div id="loader" className="svg-loader">
         <svg
-          width="300"
-          height="325"
+          width="152"
+          height="165"
           viewBox="0 0 152 165"
           fill="none"
-          
-          style={{ maxWidth: '80vw', maxHeight: '80vh', display: 'block' }}
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             className="svg-logo-path"

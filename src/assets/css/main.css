@@ -1688,10 +1688,10 @@ input::-moz-focus-inner {
   height: 76px;
 }
 
-/* .s-header.sticky .header-content .btn {
+.s-header.sticky .header-content .btn {
   height: 4.8rem !important;
   line-height: 4.4rem !important;
-} */
+}
 
 .s-header.sticky .header-nav a {
   color: rgba(255, 255, 255, 0.6);
@@ -1875,7 +1875,11 @@ input::-moz-focus-inner {
   right: 8rem;
 }
 
-
+.header-content .btn:hover,
+.header-content .btn:focus {
+  background-color: #f9861a !important;
+  border-color: #f9861a !important;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:

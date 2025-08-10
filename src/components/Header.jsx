@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import StarBorder from "./StarBorder/StarBorder.jsx";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,15 +48,7 @@ export default function Header() {
         </a>
       </div>
 
-      <div
-        className={`header-content ${menuOpen ? "menu-is-open" : ""}`}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
-      >
+      <div className={`header-content ${menuOpen ? "menu-is-open" : ""}`}>
         <nav className="row header-nav-wrap">
           <ul className="header-nav">
             <li>
@@ -92,11 +83,10 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <StarBorder as="button" speed="5s">
-          <a href="#0" className="text-white text-2xl">
-            Resume
-          </a>
-        </StarBorder>
+
+        <a href="#0" className="btn btn--stroke btn--small">
+          Download CV
+        </a>
       </div>
 
       {/* Mobile Menu Toggle */}
