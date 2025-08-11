@@ -1,3 +1,7 @@
+/* Hide all native cursors, even on links, buttons, etc. */
+*, *:hover, *:active, *:focus {
+	cursor: none !important;
+}
 /* =================================================================== 
  *  Ethos Base Stylesheet
  *  Ver. 1.0.0
