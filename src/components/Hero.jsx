@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiX } from "react-icons/si";
 // import $ from "jquery";
 import { Parallax } from "react-scroll-parallax";
 import ShinyText from "./ShinyText/ShinyText.jsx";
 import RotatingText from "./RotatingText/RotatingText.jsx";
 import Ribbons from './Ribbons/Ribbons.jsx';
-import './HeroBg.css'; 
+import './HeroBg.css';
+import './HeroSocialIcons.css';
 
 
 export default function Hero() {
@@ -54,8 +57,6 @@ export default function Hero() {
       <Parallax translateY={[-60,60]} scale={[0.8, 1.2]} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 0 }}>
         <div className="hero-bg-image" ref={bgRef} />
       </Parallax>
-// Import the CSS for hero background image
-import './HeroBg.css';
       {/* Ribbons layer */}
       <Ribbons
         baseThickness={30}
@@ -100,14 +101,15 @@ import './HeroBg.css';
               rotationInterval={5000}
             />
 
-            <ul className="hero-social">
+            <ul className="hero-social" type="none">
               <li>
                 <a
                   href="https://github.com/yourprofile"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="GitHub"
                 >
-                  GitHub
+                  <FaGithub size={28} className="me-7" />
                 </a>
               </li>
               <li>
@@ -115,21 +117,25 @@ import './HeroBg.css';
                   href="https://linkedin.com/in/yourprofile"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                 >
-                  LinkedIn
+                  <FaLinkedin size={28} className="me-7"  />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://twitter.com/yourprofile"
+                  href="https://x.com/yourprofile"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="X"
                 >
-                  Twitter
+                  <SiX size={28} className="me-7 hover:color-red"  />
                 </a>
               </li>
               <li>
-                <a href="mailto:youremail@example.com">Email</a>
+                <a href="mailto:youremail@example.com" aria-label="Email">
+                  <FaEnvelope size={28} className="me-7"  />
+                </a>
               </li>
             </ul>
           </div>

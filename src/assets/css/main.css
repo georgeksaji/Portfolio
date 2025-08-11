@@ -2137,7 +2137,6 @@ color: rgba(255, 255, 255, 0.4);
 }
 
 .hero-social li::after {
-  content: '/';
   color: rgba(255, 255, 255, 0.1);
   margin-left: 0rem;
   margin-right: 1rem;

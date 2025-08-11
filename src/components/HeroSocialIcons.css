@@ -1,0 +1,11 @@
+/* Social icons dim by default, brighten on hover */
+.hero-social a {
+  color: #bbb;
+  transition: color 0.2s, filter 0.2s;
+  filter: brightness(0.7);
+}
+.hero-social a:hover {
+  filter: brightness(1.2);
+  color: white;
+}
+
