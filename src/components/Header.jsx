@@ -42,6 +42,7 @@ export default function Header() {
   if (sticky) headerClasses += " sticky";
   if (offset) headerClasses += " offset";
   if (scrolling) headerClasses += " scrolling";
+  if (menuOpen) headerClasses += " menu-is-open";
 
   return (
     <header className={headerClasses}>
@@ -52,7 +53,7 @@ export default function Header() {
       </div>
 
       <div
-        className={`header-content ${menuOpen ? "menu-is-open" : ""}`}
+        className="header-content"
         style={{
           display: "flex",
           alignItems: "center",
@@ -92,9 +93,18 @@ export default function Header() {
                 Contact
               </a>
             </li>
+            {/* Show Resume button as last item in dropdown on small screens */}
+            {menuOpen && (
+              <li className="block md:hidden">
+                <a href="#0">Resume</a>
+              </li>
+            )}
           </ul>
         </nav>
-        <ConnectButton>Resume</ConnectButton>
+        {/* Hide Resume button on small screens, show only on desktop */}
+        <span className="hidden md:inline-block">
+          <ConnectButton>Resume</ConnectButton>
+        </span>
       </div>
 
       {/* Mobile Menu Toggle */}
