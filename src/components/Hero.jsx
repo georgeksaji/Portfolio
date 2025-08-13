@@ -104,7 +104,7 @@ export default function Hero() {
             <ul className="hero-social" type="none">
               <li>
                 <a
-                  href="https://github.com/yourprofile"
+                  href="https://github.com/georgeksaji"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -114,7 +114,7 @@ export default function Hero() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://linkedin.com/in/georgeksaji"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -124,7 +124,7 @@ export default function Hero() {
               </li>
               <li>
                 <a
-                  href="https://x.com/yourprofile"
+                  href="https://x.com/georgeksaji"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="X"
@@ -133,7 +133,7 @@ export default function Hero() {
                 </a>
               </li>
               <li>
-                <a href="mailto:youremail@example.com" aria-label="Email">
+                <a href="mailto:georgeksaji14@gmail.com" aria-label="Email">
                   <FaEnvelope size={28} className="me-7"  />
                 </a>
               </li>

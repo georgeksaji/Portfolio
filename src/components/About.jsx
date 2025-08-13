@@ -1,27 +1,26 @@
 import React from "react";
+import ScrollVelocity from "./ScrollVelocity/ScrollVelocity.jsx";
+import SpotlightCard from "./SpotlightCard/SpotlightCard.jsx";
 
 export default function About() {
   return (
-    <section id="about" className="s-about target-section">
-      <div className="row section-header bit-narrow" data-aos="fade-up">
-        <div className="column large-full">
-          <h3 className="section-header__pretitle pretitle">About Me</h3>
-          <h1 className="section-header__title title">Who am I?</h1>
-        </div>
+    <section id="about" className="s-about  target-section">
+      <div className="row section-header bit-narrow" data-aos="fade-up"></div>
+      <div className="rowt px-3 text-white px-10" data-aos="fade-up">
+        <ScrollVelocity />
+        <SpotlightCard
+          className="custom-spotlight-card w-2/12"
+          spotlightColor="rgba(255, 255, 255, 0.03)"
+        >
+         React JS
+        </SpotlightCard>
+        
       </div>
 
-      <div className="row about-content" data-aos="fade-up">
-        <div className="column large-full about-desc">
-          <p>
-            I’m George K Saji, a passionate Full-Stack Developer with experience
-            in creating scalable, user-centric applications. Skilled in both
-            frontend and backend technologies, I enjoy transforming ideas into
-            functional and visually appealing products.
-          </p>
-        </div>
-      </div>
-
-      <div className="row about-content about-stats stats block-1-3 block-m-1-2 block-mob-full" data-aos="fade-up">
+      <div
+        className="row about-content about-stats stats block-1-3 block-m-1-2 block-mob-full"
+        data-aos="fade-up"
+      >
         <div className="column stats__col">
           <h5>Experience</h5>
           <ul>
@@ -63,4 +62,3 @@ export default function About() {
     </section>
   );
 }
-

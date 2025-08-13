@@ -2475,9 +2475,10 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-bottom: 16rem;
-  background-color: #ffffff;
+  padding-bottom: 3rem;
+  background-color: #020202;
   position: relative;
+  padding-top: 5rem;
 }
 
 .s-about .right-vert-line {
@@ -2485,7 +2486,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-about__section--profile {
-  padding-top: 28rem;
+  padding-top: 18rem;
   padding-bottom: 4rem;
   min-height: 108rem;
   position: relative;
