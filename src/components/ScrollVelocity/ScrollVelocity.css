@@ -3,8 +3,10 @@
   overflow: hidden;
 }
 
+
 .scroller {
   display: flex;
+  align-items: center;
   white-space: nowrap;
   text-align: center;
   font-family: sans-serif;
@@ -12,6 +14,13 @@
   font-weight: bold;
   letter-spacing: -0.02em;
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.scroller img {
+  display: inline-block;
+  max-height: 2.5rem;
+  vertical-align: middle;
+  margin: 0 0.5rem;
 }
 
 .scroller span {
@@ -22,5 +31,8 @@
   .scroller {
     font-size: 5rem;
     line-height: 5rem;
+  }
+  .scroller img {
+    max-height: 4rem;
   }
 }
