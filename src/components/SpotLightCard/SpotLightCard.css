@@ -1,13 +1,34 @@
+/* Ensure images are contained within the card */
+.card-spotlight img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 .card-spotlight {
   position: relative;
   border-radius: 1.5rem;
-  border: 1px solid #222;
-  background-color: #111;
-  padding: 2rem;
+  /* border: 1px solid #222; */
+  border: none;
+  background-color: rgba(255, 243, 243, 0.041); /* very subtle background */
+  padding: 0.7rem 1.7rem;
   overflow: hidden;
   --mouse-x: 50%;
   --mouse-y: 50%;
   --spotlight-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  min-height: 48px;
+  aspect-ratio: 3/1;
+  margin-left: 1rem;
+}
+.card-spotlight:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+
 }
 
 .card-spotlight::before {
