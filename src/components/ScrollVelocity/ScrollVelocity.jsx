@@ -39,6 +39,8 @@ export const ScrollVelocity = ({
   const baseX = useMotionValue(0);
   const copyRef = useRef(null);
   const copyWidth = useElementWidth(copyRef);
+  // Pause on hover
+  const pausedRef = useRef(false);
 
   function wrap(min, max, v) {
     const range = max - min;
@@ -54,6 +56,7 @@ export const ScrollVelocity = ({
 
   const directionFactor = useRef(velocity >= 0 ? 1 : -1);
   useAnimationFrame((t, delta) => {
+  if (pausedRef.current) return; // skip updates while paused
     let moveBy = directionFactor.current * Math.abs(velocity) * (delta / 1000);
     baseX.set(baseX.get() + moveBy);
   });
@@ -82,7 +85,9 @@ export const ScrollVelocity = ({
     <div className={parallaxClassName} style={parallaxStyle}>
       <motion.div
         className={scrollerClassName}
-        style={{ x, ...scrollerStyle }}
+  style={{ x, ...scrollerStyle }}
+  onMouseEnter={() => (pausedRef.current = true)}
+  onMouseLeave={() => (pausedRef.current = false)}
       >
         {clones}
       </motion.div>

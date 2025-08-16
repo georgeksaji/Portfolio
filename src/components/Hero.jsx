@@ -168,9 +168,8 @@ export default function Hero() {
             </ul>
           </div>
 
-
-        <ScrollVelocity velocity={-25} numCopies={3}>
-          {/* Tech stack logos - remove wrapper div to avoid gaps */}
+          <ScrollVelocity velocity={40} numCopies={3}>
+            {/* Tech stack logos - remove wrapper div to avoid gaps */}
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
               spotlightColor="rgba(255,255,255,0.03)"
@@ -178,8 +177,9 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/html5/E34F26"
                 alt="HTML5"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">HTML5</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -188,8 +188,9 @@ export default function Hero() {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
                 alt="CSS3"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">CSS3</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -198,8 +199,9 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/javascript/F7DF1E"
                 alt="JavaScript"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">JavaScript</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -208,8 +210,9 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/c/00599C"
                 alt="C"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">C</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -218,18 +221,20 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/cplusplus/00599C"
                 alt="C++"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">C++</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
               spotlightColor="rgba(255,255,255,0.03)"
             >
               <img
-                src="https://cdn.simpleicons.org/php/777BB4"
+                src="/icons/php.png"
                 alt="PHP"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">PHP</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -238,8 +243,9 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/laravel/FF2D20"
                 alt="Laravel"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">Laravel</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -248,28 +254,31 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/python/3776AB"
                 alt="Python"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">Python</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
               spotlightColor="rgba(255,255,255,0.03)"
             >
               <img
-                src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+                src="/icons/java.webp"
                 alt="Java"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">Java</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
               spotlightColor="rgba(255,255,255,0.03)"
             >
               <img
-                src="https://cdn.simpleicons.org/django/092E20"
+                src="/icons/django.png"
                 alt="Django"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">Django</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -278,32 +287,34 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/git/F05032"
                 alt="Git"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">Git</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
               spotlightColor="rgba(255,255,255,0.03)"
             >
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                src="/icons/github.png"
                 alt="GitHub"
                 style={{
-                  height: 33,
-                  backgroundColor: "#ffffffff",
+                  height: 25,
                   borderRadius: "50%",
                 }}
               />
+              <h5 className="tech-label">GitHub</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
               spotlightColor="rgba(255,255,255,0.03)"
             >
               <img
-                src="https://cdn.simpleicons.org/mysql/4479A1"
+                src="/icons/mysql.png"
                 alt="MySQL"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">MySQL</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -312,8 +323,9 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/postgresql/336791"
                 alt="PostgreSQL"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">PostgreSQL</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -322,8 +334,9 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/bootstrap/7952B3"
                 alt="Bootstrap"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">Bootstrap</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -332,8 +345,9 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/tailwindcss/38BDF8"
                 alt="TailwindCSS"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">TailwindCSS</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -342,18 +356,20 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/react/61DAFB"
                 alt="React"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">ReactJS</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
               spotlightColor="rgba(255,255,255,0.03)"
             >
               <img
-                src="https://cdn.simpleicons.org/vite/646CFF"
+                src="/icons/vitejs.png"
                 alt="Vite"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">ViteJS</h5>
             </SpotlightCard>
             <SpotlightCard
               className="custom-spotlight-card w-2/12"
@@ -362,11 +378,68 @@ export default function Hero() {
               <img
                 src="https://cdn.simpleicons.org/nodedotjs/339933"
                 alt="Node.js"
-                style={{ height: 33 }}
+                style={{ height: 25 }}
               />
+              <h5 className="tech-label">Node.js</h5>
             </SpotlightCard>
-        </ScrollVelocity>
-                </div>
+            <SpotlightCard
+              className="custom-spotlight-card w-2/12"
+              spotlightColor="rgba(255,255,255,0.03)"
+            >
+              <img
+                src="/icons/lighthouse.svg"
+                alt="Lighthouse"
+                style={{
+                  height: 25,
+                  borderRadius: "50%",
+                }}
+              />
+              <h5 className="tech-label">Lighthouse</h5>
+            </SpotlightCard>
+            <SpotlightCard
+              className="custom-spotlight-card w-2/12"
+              spotlightColor="rgba(255,255,255,0.03)"
+            >
+              <img
+                src="/icons/openweathermap.png"
+                alt="OpenWeatherMap"
+                style={{
+                  height: 25,
+                  borderRadius: "50%",
+                }}
+              />
+              <h5 className="tech-label">OpenWeather</h5>
+            </SpotlightCard>
+            <SpotlightCard
+              className="custom-spotlight-card w-2/12"
+              spotlightColor="rgba(255,255,255,0.03)"
+            >
+              <img
+                src="/icons/vscode.svg"
+                alt="Visual Studio Code"
+                style={{
+                  height: 25,
+                  // borderRadius: "50%",
+                }}
+              />
+              <h5 className="tech-label">VS Code</h5>
+            </SpotlightCard>
+                        <SpotlightCard
+              className="custom-spotlight-card w-2/12"
+              spotlightColor="rgba(255,255,255,0.03)"
+            >
+              <img
+                src="/icons/jupyter.png"
+                alt="Jupyter"
+                style={{
+                  height: 25,
+                  // borderRadius: "50%",
+                }}
+              />
+              <h5 className="tech-label">Jupyter</h5>
+            </SpotlightCard>
+          </ScrollVelocity>
+        </div>
       </section>
     </div>
   );

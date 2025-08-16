@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
 /* Ensure images are contained within the card */
 .card-spotlight img {
   max-width: 100%;
@@ -7,6 +8,7 @@
   display: block;
 }
 .card-spotlight {
+  color: white;
   position: relative;
   border-radius: 1.5rem;
   /* border: 1px solid #222; */
@@ -44,7 +46,30 @@
   pointer-events: none;
 }
 
-.card-spotlight:hover::before,
-.card-spotlight:focus-within::before {
-  opacity: 0.6;
+/* Label below/inside icons in tech marquee */
+.tech-label{
+  display: inline-block;
+  height: auto;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  white-space: nowrap;
+  font-family: 'Inter', 'Gothic A1', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  font-weight: 550;
+  letter-spacing: 0.01em;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.481);
+}
+
+.custom-spotlight-card {
+  display: flex;
+  flex-direction: row; /* icon + text on the same line */
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.custom-spotlight-card:hover .tech-label,
+.custom-spotlight-card:focus-within .tech-label {
+  color: #ffffff !important;
 }

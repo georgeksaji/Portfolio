@@ -1880,7 +1880,12 @@ color: rgba(255, 255, 255, 0.4);
   right: 8rem;
 }
 
-
+/* *********************Skills  */
+.hero-skills {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
