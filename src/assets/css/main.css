@@ -109,6 +109,12 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none;             
 }
 
 
@@ -2078,7 +2084,6 @@ color: rgba(255, 255, 255, 0.4);
   -webkit-box-align: end;
   align-items: flex-end;
   padding-top: 35vh;
-  padding-bottom: 4vh;
   position: relative;
 }
 @media screen and (max-width: 600px) {
