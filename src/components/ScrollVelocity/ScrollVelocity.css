@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   width: 100%; /* fit container to avoid overflow */
-  margin: 0;
+  margin-block: 1.3rem;
   padding: 0;
 }
 

@@ -2077,9 +2077,16 @@ color: rgba(255, 255, 255, 0.4);
   -ms-flex-align: end;
   -webkit-box-align: end;
   align-items: flex-end;
-  padding-top: 20vh;
-  padding-bottom: 14vh;
+  padding-top: 35vh;
+  padding-bottom: 4vh;
   position: relative;
+}
+@media screen and (max-width: 600px) {
+  .hero-content {
+    height: 100%;
+    padding-top: 40vh;
+    /* padding-bottom: 10vh; */
+  }
 }
 
 .hero-content h1 {

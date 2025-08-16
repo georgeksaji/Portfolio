@@ -107,7 +107,7 @@ export default function Hero() {
         data-parallax="scroll"
       >
         <div className="row hero-content">
-          <div className="column large-full">
+          <div className="column hero-column large-full">
             <ShinyText
               text="Hi, I'm George K Saji"
               disabled={false}
@@ -167,7 +167,7 @@ export default function Hero() {
               </li>
             </ul>
           </div>
-
+          <div className="w-full">
           <ScrollVelocity velocity={40} numCopies={3}>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" style={{ height: 25 }} /> <h5 className="tech-label">HTML5</h5></SpotlightCard>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3" style={{ height: 25 }} /> <h5 className="tech-label">CSS3</h5></SpotlightCard>
@@ -180,8 +180,8 @@ export default function Hero() {
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="/icons/java.webp" alt="Java" style={{ height: 25 }} /> <h5 className="tech-label">Java</h5></SpotlightCard>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="/icons/django.png" alt="Django" style={{ height: 25 }} /> <h5 className="tech-label">Django</h5></SpotlightCard>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" style={{ height: 25 }} /> <h5 className="tech-label">Git</h5></SpotlightCard> 
-            {/* </ScrollVelocity> */}
-            {/* <ScrollVelocity velocity={-40} numCopies={3}> */}
+            </ScrollVelocity>
+            <ScrollVelocity velocity={-40} numCopies={3}>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="/icons/github.png" alt="GitHub" style={{ height: 25, borderRadius: "50%" }} /> <h5 className="tech-label">GitHub</h5></SpotlightCard>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="/icons/mysql.png" alt="MySQL" style={{ height: 25 }} /> <h5 className="tech-label">MySQL</h5></SpotlightCard>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL" style={{ height: 25 }} /> <h5 className="tech-label">PostgreSQL</h5></SpotlightCard>
@@ -195,6 +195,7 @@ export default function Hero() {
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="/icons/vscode.svg" alt="Visual Studio Code" style={{ height: 25 }} /> <h5 className="tech-label">VS Code</h5></SpotlightCard>
             <SpotlightCard className="custom-spotlight-card w-2/12" spotlightColor="rgba(255,255,255,0.03)"><img src="/icons/jupyter.png" alt="Jupyter" style={{ height: 25 }} /> <h5 className="tech-label">Jupyter</h5></SpotlightCard>
           </ScrollVelocity>
+          </div>
         </div>
       </section>
     </div>
