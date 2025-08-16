@@ -2122,15 +2122,12 @@ color: rgba(255, 255, 255, 0.4);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-flow: row wrap;
-  font-family: "Gothic A1", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 3.2rem;
-  text-transform: uppercase;
   letter-spacing: .5em;
   margin-top: 8rem;
-  margin-left: .4rem;
-  margin-bottom: 0;
+  margin-left: 0;
   position: relative;
 }
 
