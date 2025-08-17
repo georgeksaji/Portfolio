@@ -21,9 +21,10 @@ const ScrollFloat = ({
 
   const splitText = useMemo(() => {
     const text = typeof children === 'string' ? children : '';
-    return text.split("").map((char, index) => (
-      <span className="char" key={index}>
-        {char === " " ? "\u00A0" : char}
+    // Split by word, keep spaces
+    return text.split(/(\s+)/).map((word, index) => (
+      <span className="word" key={index}>
+        {word}
       </span>
     ));
   }, [children]);
@@ -37,28 +38,20 @@ const ScrollFloat = ({
         ? scrollContainerRef.current
         : window;
 
-    const charElements = el.querySelectorAll('.char');
+
+  const wordElements = el.querySelectorAll('.word');
 
     gsap.fromTo(
-      charElements,
+      wordElements,
       {
-        willChange: 'opacity, transform, filter',
-        opacity: 0,
-  // yPercent: 120,
-        scaleY: 0.7,
-        scaleX: 0.7,
-        filter: 'blur(12px)',
-        transformOrigin: '50% 0%'
+        willChange: 'opacity',
+        opacity: 0
       },
       {
         duration: animationDuration,
         ease: ease,
         opacity: 1,
-  // yPercent: 0,
-        scaleY: 1,
-        scaleX: 1,
-        filter: 'blur(0px)',
-  stagger: stagger,
+        stagger: stagger,
         scrollTrigger: {
           trigger: el,
           scroller,

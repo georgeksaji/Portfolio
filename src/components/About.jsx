@@ -17,7 +17,7 @@ export default function About() {
       data-parallax="scroll"
     >
       <div className="row about-content">
-        <div className="column large-full">
+        <div className="large-full">
           <ShinyText
             text="About Me"
             disabled={false}
@@ -26,34 +26,32 @@ export default function About() {
           />
           <br />
         </div>
-        <div className="rounded-2xl w-full text-white flex flex-col justify-between items-center px-8 py-0">
+        <div className="rounded-2xl w-full text-white flex flex-col justify-between text-justify items-center py-0">
           <ScrollFloat
             animationDuration={1}
             ease="back.inOut(2)"
-            scrollStart="center bottom+=50%"
-            scrollEnd="bottom bottom-=40%"
+            scrollStart="center bottom+=10%"
+            scrollEnd="bottom bottom-=10%"
             stagger={0.03}
           >
-            {/* <span className="about-label-text"> */}
-            Hi, I’m George K Saji, a postgraduate student in Computer
-            Applications with a strong passion for software development and web
-            technologies. I enjoy building practical solutions that combine
-            creativity with functionality, and I’m always eager to explore new
-            tools and frameworks. My journey so far has given me hands-on
-            experience with C, C++, Python, Java, Laravel, Django, PHP, MySQL,
-            and PostgreSQL, along with frontend technologies like HTML, CSS, and
-            JavaScript. On GitHub, you’ll find projects such as an e-commerce
-            store (ShopMyHome), a job listing portal (MeraNaukri), and a
-            real-time weather app (WeatherBook)—each reflecting my interest in
-            solving real-world problems through code. I also had the opportunity
-            to work as an IT & Sales Intern at Revstar Solutions, where I
-            developed and deployed their official website, focusing on
-            performance optimization and SEO. I consider myself a curious
-            learner and a collaborative teammate who values punctuality,
-            adaptability, and continuous improvement. My goal is to grow as a
-            full-stack developer while contributing to meaningful projects that
-            create impact.
-            {/* </span> */}
+            I am currently pursuing my Master of Computer Applications at
+            Rajagiri College of Social Sciences, Kalamassery. I also hold a
+            Bachelor’s degree in Computer Applications. While frontend is my
+            main focus, I have also worked on backend development and SQL
+            databases, and I remain comfortable handling them when the project
+            demands. I got into development through small HTML projects and
+            poster designing, which gradually grew into a passion for building
+            web applications. Over the years, I’ve worked on four completed
+            projects (with some others in progress) using HTML, CSS, JavaScript,
+            PHP, Laravel, Django, SQL, and Bootstrap. I’m currently focusing on
+            ReactJS, while also keeping myself updated with industry practices and
+            emerging technologies. Alongside academics, I work as a Product
+            Engineer (part-time) at Revstar Solutions. My work at Revstar
+            includes developing web applications with a strong focus on SEO,
+            performance, and design, helping create solutions that are both
+            functional and engaging. I consider myself collaborative,
+            diplomatic, and punctual, and I aim to contribute to projects where
+            teamwork, adaptability, and thoughtful decision-making are valued.
           </ScrollFloat>
         </div>
       </div>

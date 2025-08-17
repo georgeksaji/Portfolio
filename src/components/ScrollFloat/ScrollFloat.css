@@ -4,7 +4,8 @@
 
 .scroll-float-text {
   display: inline-block;
-  text-align: left;
+  justify-self: center;
+  text-align: justify;
   line-height: 1.8;
   font-family: "Inter", "Gothic A1", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;

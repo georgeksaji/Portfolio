@@ -446,8 +446,8 @@ textarea {
 .row .row {
 	width: auto;
 	max-width: none;
-	margin-left: -20px;
-	margin-right: -20px;
+	/* margin-left: -20px;
+	margin-right: -20px; */
 }
 
 /* columns
@@ -456,7 +456,7 @@ textarea {
 	-ms-flex: 1 1 0%;
 	-webkit-box-flex: 1;
 	flex: 1 1 0%;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 }
 
 .collapse > .column,
