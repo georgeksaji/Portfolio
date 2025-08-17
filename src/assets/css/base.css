@@ -673,6 +673,16 @@ textarea {
 {
 	/* margin-top: 10rem; */
 }
+
+
+.about-column
+{
+	background-color: rgba(255, 243, 243, 0.041);
+	min-width: 80vw;
+	min-height: 30vh;
+	padding: 2rem;
+
+}
 /* ------------------------------------------------------------------- 
  * ## medium screen devices
  * ------------------------------------------------------------------- */

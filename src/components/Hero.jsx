@@ -56,7 +56,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div
+    <section
       style={{
         position: "relative",
         minHeight: "80vh",
@@ -96,7 +96,7 @@ export default function Hero() {
         }}
       />
       {/* Content layer */}
-      <section
+      <div
         id="hero"
         className="s-hero target-section"
         style={{
@@ -210,7 +210,7 @@ export default function Hero() {
           </div>
         </div>
           
-      </section>
+      </div>
       <div className="w-full px-3 text-white text-center mt-0 tech-label-text mb-4 md:px-40">
            {/* exclamation lucide icon */}
         <span role="img" aria-label="exclamation" className="inline-block mr-2">
@@ -218,6 +218,6 @@ export default function Hero() {
         </span>
            These are the technologies and tools I have worked with and explored, but my strongest expertise is in C++, Python, HTML, CSS, JavaScript, MySQL, Laravel, Django, and Bootstrap.
         </div>
-    </div>
+    </section>
   );
 }

@@ -74,6 +74,18 @@
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.873);
 }
+/* .about-label-text
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Gothic A1', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.873);
+} */
+
 
 .custom-spotlight-card {
   display: flex;

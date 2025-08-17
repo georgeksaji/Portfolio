@@ -2115,6 +2115,25 @@ color: rgba(255, 255, 255, 0.4);
   top: .55em;
 }
 
+
+
+.about-content {
+  height: 100%;
+  max-width: 1400px;
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .about-content {
+    height: 100%;
+    padding-top: 40vh;
+    /* padding-bottom: 10vh; */
+  }
+}
+
+
 /* -------------------------------------------------------------------
  * ## hero social
  * ------------------------------------------------------------------- */
