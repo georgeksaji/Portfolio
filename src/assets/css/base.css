@@ -389,6 +389,12 @@ li {
 a {
 	text-decoration: none;
 	line-height: inherit;
+	color: inherit;
+	transition: color 0.2s;
+}
+
+a:hover, a:focus {
+	color: #38bdf8; /* Tailwind sky-400 or pick your highlight color */
 }
 
 a img {

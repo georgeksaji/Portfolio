@@ -10,7 +10,7 @@ export default function About() {
       className="row target-section relative z-20 min-h-screen flex items-center px-6"
       data-parallax="scroll"
     >
-  <div className="row about-content flex items-center lg:flex-col lg:items-start">
+      <div className="row about-content flex items-center lg:flex-col lg:items-start">
         <div className="large-full">
           <ShinyText
             text="About Me"
@@ -20,7 +20,7 @@ export default function About() {
           />
           <br />
         </div>
-  <div className="rounded-2xl w-full text-white flex flex-col justify-between text-justify items-center">
+        <div className="rounded-2xl w-full text-white flex flex-col justify-between text-justify items-center">
           <ScrollFloat
             animationDuration={1}
             ease="back.inOut(2)"
@@ -38,14 +38,23 @@ export default function About() {
             web applications. Over the years, I’ve worked on four completed
             projects (with some others in progress) using HTML, CSS, JavaScript,
             PHP, Laravel, Django, SQL, and Bootstrap. I’m currently focusing on
-            ReactJS, while also keeping myself updated with industry practices and
-            emerging technologies. Alongside academics, I work as a Product
-            Engineer (part-time) at Revstar Solutions. My work at Revstar
-            includes developing web applications with a strong focus on SEO,
-            performance, and design, helping create solutions that are both
-            functional and engaging. I consider myself collaborative,
-            diplomatic, and punctual, and I aim to contribute to projects where
-            teamwork, adaptability, and thoughtful decision-making are valued.
+            ReactJS, while also keeping myself updated with industry practices
+            and emerging technologies. Alongside academics, I work as a Product
+            Engineer (part-time) at{" "}
+            <a
+              href="https://revstar.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-inherit hover:text-indigo-500 transition-colors"
+            >
+              Revstar Solutions
+            </a>
+            . My work at Revstar includes developing web applications with a
+            strong focus on SEO, performance, and design, helping create
+            solutions that are both functional and engaging. I consider myself
+            collaborative, diplomatic, and punctual, and I aim to contribute to
+            projects where teamwork, adaptability, and thoughtful
+            decision-making are valued.
           </ScrollFloat>
         </div>
       </div>

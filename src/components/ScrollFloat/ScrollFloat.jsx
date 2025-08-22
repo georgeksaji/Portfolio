@@ -1,4 +1,24 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, Children, isValidElement, cloneElement } from 'react';
+
+// Recursively wrap only text nodes in .word spans, preserve elements like <a>
+function wrapWords(node, keyPrefix = '') {
+  if (typeof node === 'string') {
+    return node.split(/(\s+)/).map((word, i) => (
+      <span className="word" key={keyPrefix + i}>{word}</span>
+    ));
+  }
+  if (Array.isArray(node)) {
+    return node.map((child, i) => wrapWords(child, keyPrefix + i + '-'));
+  }
+  if (isValidElement(node)) {
+    return cloneElement(
+      node,
+      { key: keyPrefix + (node.key || 'el') },
+      wrapWords(node.props.children, keyPrefix + 'c-')
+    );
+  }
+  return node;
+}
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -19,15 +39,8 @@ const ScrollFloat = ({
 }) => {
   const containerRef = useRef(null);
 
-  const splitText = useMemo(() => {
-    const text = typeof children === 'string' ? children : '';
-    // Split by word, keep spaces
-    return text.split(/(\s+)/).map((word, index) => (
-      <span className="word" key={index}>
-        {word}
-      </span>
-    ));
-  }, [children]);
+  // Recursively wrap only text nodes in .word spans, preserve elements like <a>
+  const splitText = useMemo(() => wrapWords(children), [children]);
 
   useEffect(() => {
     const el = containerRef.current;
