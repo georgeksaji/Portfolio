@@ -2128,7 +2128,7 @@ color: rgba(255, 255, 255, 0.4);
 @media screen and (max-width: 600px) {
   .about-content {
     height: 100%;
-    padding-top: 40vh;
+    padding-block: 10vh;
     /* padding-bottom: 10vh; */
   }
 }

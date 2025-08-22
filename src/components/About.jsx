@@ -7,32 +7,26 @@ export default function About() {
     // <section id="about" className="s-about  target-section">
     <section
       id="about"
-      className="row target-section"
-      style={{
-        position: "relative",
-        zIndex: 2,
-        minHeight: "100vh",
-        paddingBlock: "15rem",
-      }}
+      className="row target-section relative z-20 min-h-screen flex items-center px-6"
       data-parallax="scroll"
     >
-      <div className="row about-content">
+  <div className="row about-content flex items-center lg:flex-col lg:items-start">
         <div className="large-full">
           <ShinyText
             text="About Me"
             disabled={false}
             speed={3}
-            className="custom-class text-5xl mb-5"
+            className="custom-class text-5xl mb-8"
           />
           <br />
         </div>
-        <div className="rounded-2xl w-full text-white flex flex-col justify-between text-justify items-center py-0">
+  <div className="rounded-2xl w-full text-white flex flex-col justify-between text-justify items-center">
           <ScrollFloat
             animationDuration={1}
             ease="back.inOut(2)"
-            scrollStart="center bottom+=10%"
-            scrollEnd="bottom bottom-=10%"
-            stagger={0.03}
+            scrollStart="top 90%"
+            scrollEnd="top 50%"
+            stagger={1.03}
           >
             I am currently pursuing my Master of Computer Applications at
             Rajagiri College of Social Sciences, Kalamassery. I also hold a

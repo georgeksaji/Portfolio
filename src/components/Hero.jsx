@@ -211,7 +211,7 @@ export default function Hero() {
         </div>
           
       </div>
-      <div className="w-full px-3 text-white text-center mt-0 tech-label-text mb-4 md:px-40">
+      <div className="w-full px-3 flex text-white mt-0 tech-label-text mb-4 md:px-40 text-justify">
            {/* exclamation lucide icon */}
         <span role="img" aria-label="exclamation" className="inline-block mr-2">
           <FaExclamationCircle className="w-4 h-4 inline-block" />
