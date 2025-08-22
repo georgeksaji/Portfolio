@@ -19,3 +19,13 @@
   display: inline-block;
   transition: filter 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s cubic-bezier(0.4,0,0.2,1);
 }
+
+.font-design
+{
+  font-family: "Inter", "Gothic A1", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.481);
+}
