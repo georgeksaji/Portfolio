@@ -11,7 +11,7 @@ import Preloader from "./components/Preloader";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Services from "./components/Services";
+import Education from "./components/Education";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import LightBeamCursor from "./components/LightBeamCursor";
@@ -51,7 +51,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Services />
+        <Education />
         <Portfolio />
       </main>
       <Footer />
