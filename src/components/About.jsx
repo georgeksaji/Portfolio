@@ -7,20 +7,19 @@ export default function About() {
     // <section id="about" className="s-about  target-section">
     <section
       id="about"
-      className="row target-section relative z-20 min-h-screen flex items-center px-6"
+      className="row target-section relative z-20 px-6 h-auto pt-16 md:pt-40"
       data-parallax="scroll"
     >
-      <div className="row about-content flex items-center lg:flex-col lg:items-start">
-        <div className="large-full">
+  <div className="row about-content flex flex-col lg:flex-col lg:items-start">
+        <div className="large-full mb-0">
           <ShinyText
             text="About Me"
             disabled={false}
             speed={3}
-            className="custom-class text-5xl mb-8"
+    className="custom-class text-5xl leading-tight mb-10"
           />
-          <br />
         </div>
-        <div className="rounded-2xl w-full text-white flex flex-col justify-between text-justify items-center">
+        <div className="rounded-2xl w-full flex flex-col justify-between text-justify items-center">
           <ScrollFloat
             animationDuration={1}
             ease="back.inOut(2)"
